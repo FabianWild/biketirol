@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Bike Trail Tirol Beispiel</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+
+    <!-- Leaflet Providers -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-providers/1.13.0/leaflet-providers.min.js" integrity="sha512-5EYsvqNbFZ8HX60keFbe56Wr0Mq5J1RrA0KdVcfGDhnjnzIRsDrT/S3cxdzpVN2NGxAB9omgqnlh4/06TvWCMw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Leaflet FullScreen -->
+    <script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/Leaflet.fullscreen.min.js'></script>
+    <link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css' rel='stylesheet' />
+
+    <!-- eigene Stile und Hauptskript -->
+    <link rel="stylesheet" href="main.css">
+    <script defer src="main.js"></script>
+</head>
+
+<body>
+    <main>
+        <header>
+            <h2><i class="fa-solid fa-person-biking"></i> Bike Trail Tirol Beispiel</h2>
+            <nav>
+                <i class="fab fa-github"></i> <a href="https://github.com/webmapping/biketirol">Github</a>
+            </nav>
+        </header>
+        <article>
+            <h1><a href=""></a>Wenns - Pillierhöhe - Landeck</h1>
+            <p>Auf der Strecke von rund 19 Kilometern überwinden Sie 600 Höhenmeter, die Sie zu etwa zwei Dritteln auf asphaltierten Radwegen und zu einem Drittel auf Schotter- und Wanderwegen bzw. Pfaden zurücklegen. Höchster Punkt der Etappe, die das Pitztal mit dem Oberinntal verbindet, ist die Pillerhöhe auf 1.560 Metern Höhe.</p>
+
+            <div id="map"></div>
+
+            <h3>Streckenbeschreibung</h3>
+            <p>Vom Zentrum fährt man zunächst etwa 300 Meter auf der Straße zur Pillerhöhe Richtung Süden ehe man die Abzweigung nach Obermühlbach nimmt. Auf einem asphaltierten Nebenweg radelt man etwas oberhalb der Straße taleinwärts. Wieder auf der Passstraße angekommen folgt man dieser bis zur Pillerhöhe (ca. 1,5 Stunde ab Wenns). Vom Pass nimmt man zuerst die Straße Richtung Fließ, zweigt jedoch nach 50 Metern links in einen Forstweg ab. Nach einem guten Kilometer trifft man wieder auf die Straße und fährt in gleicher Richtung bis ins Dorfzentrum von Fließ. Von hier fährt man in westlicher Richtung auf der gut beschilderten Via Claudia Augusta auf Wiesenhängen über dem Inntal bis nach Landeck (1,5 Stunde ab Pillerhöhe).</p>
+
+        </article>
+        <footer>
+            <strong>Datenquellen:</strong>
+            <nav>
+                <a href="https://www.tirol.at/reisefuehrer/sport/mountainbiken/bike-trail-tirol">Bike Trail Tirol (Online Reiseführer Tirol)</a> |
+                <a href="https://www.tirol.at/reisefuehrer/sport/radfahren/biketouren/a-bike-trail-tirol-wenns-pillerhoehe-landeck">Etappenseite</a>> |
+                <a href="https://www.data.gv.at/katalog/de/dataset/land-tirol_elektronischekartetirol">eGrundkarte Tirol</a>
+            </nav>
+        </footer>
+    </main>
+</body>
+
+</html>
